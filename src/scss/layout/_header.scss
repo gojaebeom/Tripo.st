@@ -1,0 +1,192 @@
+/* Header */
+#header{
+    .hd_inner {
+        height: 80px;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
+        position: relative;
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+                align-items: center;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+    }
+    .gnb_wrap {
+        height: 100%;
+        -ms-flex-positive: 1;
+        -webkit-box-flex: 1;
+                flex-grow: 1;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+    .gnb {
+        ul {
+            li {
+                display: inline-block;
+                margin-left:20px;
+            }
+        }
+    }
+}
+
+#right_slide_snb {
+    &.open {
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+    }
+    
+}
+.right_slide_snb {
+    position: fixed;
+    z-index: 9999;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: left 0.2s ease, right 0.2s ease;
+    transition: left 0.2s ease, right 0.2s ease;
+    .right_slide_snb_inner {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #fff;
+        .right_slide_snb_close {
+            display: inline-block;
+            position: absolute;
+            right:30px;
+            top:40px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .logo_wrap {
+            padding-left:30px;
+        }
+    }
+
+    .side_tos_container{
+        width:100%;
+        position: absolute;
+        left:0px;
+        bottom:100px;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:5px;
+
+        .top{
+            display: flex;
+            justify-content:flex-start;
+            align-items:center;
+            width: 100%;
+
+
+            .side_tos_1{
+                padding: 5px;
+
+                color:gray;
+
+            }
+            .side_tos_2{
+                padding: 5px;
+
+                color:gray;
+            }
+        }
+
+        .bottom{
+            .side_tos_3{
+                padding: 5px;
+                width:100%;
+                color:gray;
+            }
+        }
+
+        
+
+    }
+
+
+    
+}
+.open {
+    .right_slide_snb {
+        right: 0;
+        -webkit-transition: left 0.2s ease, right 0.2s ease;
+        transition: left 0.2s ease, right 0.2s ease;
+    }
+}
+.snb{
+    width: 100%;
+    margin: 30px 0 0 0;
+    ul {
+        padding-left: 30px;
+        li {
+            display: block;
+            margin-bottom: 20px;
+            a {
+                font-weight:600;
+                font-size:22px;
+                font-size:1.375rem;
+            }
+            &.active {
+                a {
+                    color:#36D7B7;
+                }
+            }
+            &:hover {
+                a {
+                    color:#36D7B7;
+                }
+            }
+        }
+    }
+}
+
+
+.snb_sns {
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-left: 1.875rem;
+    padding-right: 3.75rem;
+    margin-top:20px;
+    margin-top:1.25rem;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    li {
+        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+    }
+}

@@ -1,0 +1,229 @@
+.tripo-clip-detail-container{
+    
+    width:100%;
+    margin:0px auto;
+    margin-top:30px;
+    display:flex; 
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom:200px;
+
+    .footage-wrap{
+        // padding:5px;
+        // border-radius: 3px;
+        // border:1px solid #E6E6E6;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+
+        .footage-hr{
+            margin-top:5px;
+            border:1px solid #F2F2F2;
+        }
+
+        .footage{
+            width:100%;
+
+        }
+        .content{
+            margin-top:10px;
+            width:100%;
+            .top{
+                display:flex;
+                flex-direction: column;
+                justify-content:space-between;
+                width:100%;
+                .left{
+                    margin-left: 5px;
+                    .title{font-size:1.25rem;}
+                }
+                .right{
+                    min-width:200px;
+                    display:flex;
+                    justify-content:flex-end;
+                    align-items:center;
+                    margin-right:5px;
+                    .rated{
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        border-radius:5px;
+                        border:1px solid #E6E6E6;
+                        padding:8px 20px;
+                        i{font-size:20px;color:#36d7b7;margin-right:5px;}
+                        span{font-size:20px;color:#424242;}
+                    }
+                }
+            }
+            .bottom{
+                border:none;
+                margin:20px 0px;
+                width:100%;
+                // display:flex;
+                // justify-content: space-between;
+
+                .top{
+                    min-width:100px;
+
+                    .detail_contents_profile{
+                        padding:0px 5px;
+                        width:100%;
+                        display:flex;
+                        justify-content:space-between;
+                        align-items: center;
+                        height:auto;
+                        .profile_img_wrap{
+                            img{
+                                min-width: none;
+                                width: 42px;
+                                height:42px;
+                                border-radius:100%;
+                                margin-right:10px;
+                                border:2px solid #36d7b7;
+                            }
+                        }
+            
+                    }
+                }
+                .bottom{
+                    padding:0px 5px;
+                    width:100%;
+                }
+            }
+        }
+    }
+    .review-wrap{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .footage-review-box{
+            margin-top:10px;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            border-radius: 5px;
+            border:1px solid #E6E6E6;
+            padding:10px;
+
+            .top{
+                width:100%;
+                display:flex;
+                justify-content:space-between;
+                .left{
+                    display: flex;
+                    justify-content:flex-start;
+                }
+                .right{
+                    display:flex;
+                    justify-content: flex-end;
+                    align-items:center;
+                    padding:3px;
+                    i{font-size:16px;color:#36d7b7;margin-right:5px;}
+                    span{font-size:20px;color:#424242;}
+                }
+            }
+            .bottom{
+                width:100%;
+                padding-top:10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .tripo-clip-detail-container{
+        width:900px;
+        flex-direction: row;
+        align-items:flex-start;
+        
+
+        .footage-wrap{
+            flex:7;
+            margin-right:20px;
+            .content{
+                margin-top:10px;
+                width:100%;
+                .top{
+                    flex-direction: row;
+                    .left{
+                        .title{font-size:1.5rem;}
+                    }
+                    .right{
+                        display:flex;
+                        flex-direction: row;
+                        justify-content:center;
+                        align-items:center;
+                        .rated{
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            border-radius:5px;
+                            border:1px solid #E6E6E6;
+                            padding:8px 20px;
+                            i{font-size:20px;color:#36d7b7;margin-right:5px;}
+                            span{font-size:20px;}
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .review-wrap{
+            //margin-left: 10px;
+            flex:5;
+        }
+    }     
+}
+
+@media (min-width: 1200px){
+    .tripo-clip-detail-container{
+        width:1100px;
+        flex-direction: row;
+        align-items:flex-start;
+
+        .footage-wrap{
+            margin-right:20px;
+            flex:8;
+
+            .content{
+                margin-top:10px;
+                width:100%;
+                .top{
+                    flex-direction: row;
+                    .left{
+                        .title{font-size:1.8rem;}
+                    }
+                    .right{
+                        display:flex;
+                        justify-content:flex-end;
+                        align-items:center;
+                        margin-right: 5px;
+                        .rated{
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            border-radius:5px;
+                            border:1px solid #E6E6E6;
+                            padding:8px 20px;
+                            i{font-size:20px;color:#36d7b7;margin-right:5px;}
+                            span{font-size:20px;}
+                        }
+                    }
+                }
+            }
+        }
+        .review-wrap{
+            //margin-left:10px;
+            flex:4;
+        }
+    }   
+}

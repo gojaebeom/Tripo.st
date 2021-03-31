@@ -1,0 +1,14 @@
+.tos-v2{
+    overflow: hidden;
+
+    .tos-v2-top{
+        margin-top:100px;
+    }
+    .tos-v2-bottom{
+        pre{
+            padding:10px;
+            overflow: auto;
+            white-space: pre-wrap; /* pre tag내에 word wrap */
+        }
+    }
+}

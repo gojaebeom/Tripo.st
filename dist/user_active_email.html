@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+
+<head>
+
+  <meta property="og:title" content="Tripo" />
+  <meta property="fb:page_id" content="43929265776" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Trip.st mail</title>
+  <!-- adapted from http://www.leemunroe.com/responsive-html-email-template/ -->
+
+  <style type="text/css">
+    img {
+    max-width: 100%;
+    }
+    body {
+    -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;
+    }
+    
+    @media screen and (max-width:480px){
+      .body-wrap{
+        padding:0px !important;
+      }
+      .container{
+        padding:20px 5px !important;
+      }
+    }
+    .repeat {
+      display: inline-block;
+      position: relative;
+      height: 2em;
+      padding: .4em;
+      width: 2em;
+    }
+    .repeat:before, .repeat:after {
+      content: '';
+      display: block;
+    }
+    .repeat:before {
+      border-color: transparent white white white;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: .45em;
+      height: 1.5em;
+      width: 1.5em;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .repeat:after {
+      border-color: transparent transparent transparent white;
+      border-style: solid;
+      border-width: .7em 0 .7em .9em;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+    }
+    input{
+      display:none;
+    }
+  </style>
+  <body bgcolor="#f6f6f6" style="margin: 0; padding: 0;">
+    <div style="position:relative;">
+      <div class="preheader" style="display:none;max-height:0px;overflow:hidden;">
+
+      </div>
+      <!-- <center><a href="http://127.0.0.1:8000/" style="font-size:12px;line-height:15px;text-decoration:none;font-family:Helvetica,Arial;color:#1E90FF">Tripo.st</a></center> -->
+      <center><a href="https://tripo.st/" style="font-size:12px;line-height:15px;text-decoration:none;font-family:Helvetica,Arial;color:#1E90FF">Tripo.st</a></center>
+
+      <!--[if !mso]>
+      <a id="replay" class="replaycont" style="display:block;max-height:0px;overflow:hidden;font-size:15px;font-style:normal;cursor:pointer;" href="#top">
+        <div class="repeat" style="font-size:6px;vertical-align:middle;height:17px;"></div>
+        <div style="display:inline-block;color:#fafafa;">Replay</div>
+      </a>
+      <!--<![endif]-->
+
+
+      <div class="outer">
+        <!-- body -->
+        <table width="100%" class="body-wrap" bgcolor="#f6f6f6" style="margin: 0;padding-top:5px;">
+          <tr>
+            <td style="font-size:0;"></td>
+            <td width="600" class="container" bgcolor="#FFFFFF" style="border: 1px solid #f0f0f0; font-family: 'Helvetica Neue', Helvetica; margin: 0 auto; max-width: 600px !important; padding: 20px">
+
+              <!-- content -->
+              <div class="content" style="display: block; font-family: 'Helvetica Neue', Helvetica; margin: 0 auto; max-width: 550px; padding: 0">
+                <table style="font-family: 'Helvetica Neue', Helvetica; margin: 0; padding: 0; width: 100%">
+                  <tr>
+                    <td style="font-family: 'Helvetica Neue', Helvetica; margin: 0; padding: 0">
+                      <table cellpadding="0" cellspacing="0" style="width:100%;">
+                        <tr>
+                          <td width="100%" valign="middle" height="30" style="text-align:center;margin-bottom:100px;font-family: 'Helvetica Neue', Helvetica;font-size:14px;font-weight:normal;margin:0 0 10px; padding: 0;">
+                            <h1>Tripo 회원가입을 감사드립니다.</h1>
+                            <p>하단의 이미지를 클릭하여 인증을 완료해주세요.</p>
+                            <br/>
+                            <h1>Welcome to Tripo!</h1>
+                            <p>Please click the image below to complete your email verification!</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" align="center" bgcolor="#037dcd" style="font-family:'Helvetica Neue',Helvetica,Arial;font-weight:bold;font-style:italic;font-size:26px;line-height:30px;color:#fafafa">
+                            <!-- <a href="http://127.0.0.1:8000/api/users/create/activate/?id={{user}}&token={{token}}" style="text-decoration:none;color:white;"><br><br>Authenticate<br>your email!📧<br><br><br></a> -->
+                            <a href="https://tripo.st/api/users/create/activate/?id={{user}}&token={{token}}" style="text-decoration:none;color:white;"><br><br>Authenticate<br>your email!📧<br><br><br></a>
+                            <!-- <a href="https://studybook.me/api/users/create/activate/?id={{user}}&token={{token}}" style="text-decoration:none;color:white;"><br><br>Authenticate<br>your email!📧<br><br><br></a> -->
+                            <div></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+    
+
+            </td>
+            <td style="font-size:0;"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</body>
+
+</html>

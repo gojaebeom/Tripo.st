@@ -1,0 +1,109 @@
+.gallery_img {
+    display:block;
+    width: 100%;
+}
+
+.detail_gallery {
+    &:hover {
+        .detail_gallery_action {
+            opacity: 1;
+        }
+    }
+}
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    z-index:1;
+    margin-top:0;
+}
+.write_related {
+    .swiper-button-prev,
+    .swiper-button-next {
+        height: calc( 100% - 24px );
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination,
+.detail_gallery_action {
+    opacity: 0;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+}
+.swiper-container {
+    &:hover {
+        .swiper-button-prev,
+        .swiper-button-next {
+            opacity: 1;
+        }
+        .swiper-pagination {
+            opacity: 1;
+        }
+
+    }
+}
+.swiper-container2 {
+    &:hover {
+        .swiper-button-prev,
+        .swiper-button-next {
+            opacity: 1;
+        }
+        .swiper-pagination {
+            opacity: 1;
+        }
+
+    }
+}
+.swiper-button-prev {
+    left:0;
+    background: rgba(0, 0, 0, 0.3);
+    background: -webkit-gradient(linear,right top, left top,from(#0000), to(rgba(0,0,0,0.3)));
+    background: linear-gradient(-90deg,#0000, rgba(0,0,0,0.3));
+    &:after {
+        content: "";
+        width: 26px;
+        height: 52px;
+        background-image: url("../img/arrow_left.png") !important;
+        background-size: 26px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+}
+
+.swiper-button-next {
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    background: -webkit-gradient(linear,left top, right top,from(#0000), to(rgba(0,0,0,0.3)));
+    background: linear-gradient(90deg,#0000, rgba(0,0,0,0.3));
+    &:after {
+        content: "";
+        width: 26px;
+        height: 52px;
+        background-image: url("../img/arrow_right.png") !important;
+        background-size: 26px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom:20px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
+}
+.swiper-pagination-bullet {
+    background:#e9e9e9;
+    width:12px;
+    height:12px;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background:#36D7B7;
+}

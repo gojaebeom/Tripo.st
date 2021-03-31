@@ -1,0 +1,163 @@
+/* Write */
+.write_default {
+    position: relative;
+    z-index: 101;
+    max-width: 940px;
+    width: 100%;
+    height:auto;
+    margin: 30px auto;
+    overflow: visible;
+    background: #fff;
+    border: none;
+    .write_default_inner {
+        padding:24px;
+        padding:1.5rem;
+        background: #fff;
+        border-radius:10px;
+    }
+    .write_default_bottom {
+        margin-top:30px;
+    }
+}
+.write_default_tab {
+    .tab_list {
+        li {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        }
+    }
+}
+.write_input_wrap {
+    .write_input_title {
+        display: block;
+        font-size:16px;
+        font-size:1rem;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+    .write_input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+    }
+    .write_travel_time {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-flex: 1;
+                    -ms-flex-positive: 1;
+                        flex-grow: 1;
+        .box_line {
+            padding:0 20px;
+            padding:0 1.25rem;
+        }
+        .quantity_box {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+                    margin-left:10px;
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+                        justify-content: flex-end;
+        }
+    }
+}
+.write_textarea_wrap {
+    .write_textarea_title {
+        display: block;
+        font-size:16px;
+        font-size:1rem;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+}
+.write {
+    border-top:1px solid #aaa;
+    padding-top:20px;
+    margin-top:20px;
+}
+.write_travel_info,
+.write_title,
+.write_panarama {
+    ul {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+        li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+                -ms-flex-preferred-size: 100%;
+                    flex-basis: 100%;
+            .write_input_wrap {
+                width:100%;
+                .write_input {
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                }
+            }
+            &.col_1 {
+                    -ms-flex-preferred-size: calc(20% - 20px);
+                        flex-basis: calc(20% - 20px);
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+            }
+            &.col_2 {
+                    -ms-flex-preferred-size: calc(40% - 20px);
+                        flex-basis: calc(40% - 20px);
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+            }
+            &.col_3 {
+                    -ms-flex-preferred-size: calc(50% - 20px);
+                        flex-basis: calc(50% - 20px);
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+            }
+            .input_money  {
+                input {
+                    width: 80px;
+                }
+            }
+        }
+        &.col_row > li {
+            &+li {
+                margin-left:20px;
+                margin-left:1.25rem;
+            }
+        }
+    }
+}
+
+.detail_review_write .write_travel_info {
+    ul{
+       li {
+           &.col_3 {
+            -ms-flex-preferred-size: calc(30% - 20px);
+                flex-basis: calc(30% - 20px);
+           }
+       }
+    }
+}
+.write_related {
+    position: relative;
+}

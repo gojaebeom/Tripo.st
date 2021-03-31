@@ -1,0 +1,172 @@
+// 모바일
+.tripo-clip-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    margin-bottom:100px;
+
+    .tripo-clip-create-wrap{
+        width:100%;
+        border-radius:5px;
+        // background:#F8F9F9;
+        padding: 1.2em;
+        display:flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h2{color:#585858;}
+        
+        input {
+            display: none;
+        }
+        .top-buttons-wrap{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .upload-wrap{
+            width:100%;
+            margin-bottom:20px;
+
+            .thumbnail-upload-wrap{
+                position: relative;
+                margin-top: 20px;
+                min-height:200px;
+                cursor: pointer;
+                width:100%;
+                border:2px dotted #e8e8e8;
+                //background: rgba(22, 24, 35, 0.03);
+                border-radius: 8px;
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                padding: 1.2em;
+                .fa-image{
+                    font-size: 35px;
+                    color: rgb(54, 215, 183);
+                    margin-bottom:10px;
+                }
+                span{ color: #626567}
+                img{
+                    border-radius:5px;
+                    width:100%;
+                }
+                .delete_button{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+            }
+    
+            .video-upload-wrap{
+                position: relative;
+                margin-top: 20px;
+                min-height:200px;
+                cursor: pointer;
+                width:100%;
+                background: rgba(22, 24, 35, 0.03);
+                border-radius: 8px;
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                padding: 1.2em;
+                .fa-cloud-upload-alt{
+                    font-size: 35px;
+                    color: #808B96;
+                    margin-bottom:10px;
+                }
+                .delete_button{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+            }
+        }
+
+
+        .title-wrap{
+            margin-top:20px;
+            width:100%;
+            h4{ color:#585858;margin-bottom:5px;font-weight: 600;}
+            input{
+                display: block;
+                width:100%;
+                border:1px solid #D8D8D8;//#e8e8e8;
+                border-radius:5px;
+                padding:15px 10px
+            }
+        }
+
+        .content-wrap{
+            margin-top:20px;
+            width:100%;
+            h4{ color:#585858;margin-bottom:5px;font-weight: 600; }
+            textarea{
+                border:1px solid #D8D8D8;//#e8e8e8;
+                border-radius:5px;
+                width:100%;
+                height:100px;
+                padding:10px;
+            }
+        }
+        .tag-wrap{
+            margin-top:20px;
+            width:100%;
+            h4{ color:#585858;margin-bottom:5px;font-weight: 600; }
+            input{display:block;}
+            .write_input.box_line.icon_input{
+                border:1px solid #D8D8D8;
+                border-radius:5px;
+            }
+        }
+        .setting-wrap{
+            margin-top:20px;
+            width:100%;
+            h4{ color:#585858;margin-bottom:5px;font-weight: 600; }
+            
+        }
+
+        .bottom-buttons-wrap{
+            margin-top:20px;
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
+        }
+
+    }
+}
+
+
+@media (min-width: 769px){
+    .tripo-clip-container{
+        .tripo-clip-create-wrap{
+            //box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06)!important;
+            width:700px;
+            .upload-wrap{
+                display:flex;
+                flex-direction: row;
+                .thumbnail-upload-wrap{
+                    margin-right:10px;
+                    max-width:350px;
+                    max-height:200px;
+                    img{
+                        width:auto;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 데스크탑
+// @media (min-width:1200px){
+//     .tripo-clip-container{
+
+//     }
+// }

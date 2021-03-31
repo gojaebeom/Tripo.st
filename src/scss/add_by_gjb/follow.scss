@@ -1,0 +1,30 @@
+.follow_button{
+    transition: all .5s;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    font-weight: bold;
+    border-radius:3px;
+    background:#8c14fc;
+    cursor: pointer;
+}
+
+.user_name{
+    font-size:20px !important;
+    font-weight: bold;
+}
+
+
+.follow_container{
+    position: fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+}

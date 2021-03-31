@@ -1,0 +1,548 @@
+/* Detail */
+
+.detail {
+    max-width: 940px;
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+    background:#fff;
+    border: none;
+}
+.detail_gallery {
+    .detail_gallery_action {
+        position:absolute;
+        top:20px;
+        right:20px;
+        z-index: 1;
+        ul {
+            li {
+                display: inline-block;
+                &+li {
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+    .detail_gallery_rating {
+        position:absolute;
+        top:20px;
+        left:20px;
+        z-index: 1;
+        ul {
+            li {
+                display: inline-block;
+                &+li {
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+}
+.detail_map {
+    height:300px;
+    & > div {
+        width:100%;
+        height:300px;
+    }
+}
+.detail_contents {
+    .detail_contents_inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 24px;
+        padding: 1.5rem;
+        .detail_contents_profile {
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            -ms-flex-preferred-size: 150px;
+                flex-basis: 150px;
+        }
+        .detail_contents_info {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            margin-left:24px;
+            .detail_contents_title {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                h3 {
+                    font-weight:600;
+                    margin-right:20px;
+                    -webkit-box-flex: 0;
+                        -ms-flex-positive: 0;
+                            flex-grow: 0;
+                }
+                ul {
+                    -webkit-box-flex: 0;
+                        -ms-flex-positive: 0;
+                            flex-grow: 0;
+                    li {
+                        display: inline-block;
+                    }
+                }
+                .detail_contents_title_action {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+                    -ms-flex-pack: end;
+                        -webkit-box-pack: end;
+                            justify-content: flex-end;
+                    -ms-flex-align: center;
+                        -webkit-box-align: center;
+                    align-items: center;
+                    a {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        color:#fff;
+                        
+                    }
+                }
+            }
+            .detail_contents_middle {
+                display:-webkit-box;
+                display:-ms-flexbox;
+                display:flex;
+                border-top:2px solid #e9e9e9;
+                margin-top:20px;
+                padding-top:20px;
+                margin-top:1.25rem;
+                padding-top:1.25rem;
+                .detail_contents_desc {
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                            font-size:16px;
+                            font-size:1rem;
+                            line-height: 1.4;
+                }
+                .detail_contents_panorama {
+                    -webkit-box-flex:0;
+                        -ms-flex-positive:0;
+                            flex-grow:0;
+                    -webkit-box-pack: end;
+                        -ms-flex-pack: end;
+                            justify-content: flex-end;
+                    margin-left: 40px;
+                    .detail_contents_panorama_inner {
+                        position: relative;
+                        overflow: hidden;
+                        border:none;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                    }
+                    .panorama_img {
+                        max-width:210px;
+                    }
+                    .detail_contents_panorama_overlay {
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.0)));
+                        background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+                        padding: 10px 5px;
+                        padding: 0.625rem 0.313rem;
+                        color: #fff;
+                        font-size: 12px;
+                        font-size:0.75rem;
+                    }
+                }
+            }
+            .detail_contents_travel {
+                margin-top:30px;
+                .detail_contents_travel_own {
+                    display:-webkit-box;
+                    display:-ms-flexbox;
+                    display:flex;
+                    
+                    .detail_contents_travel_own_start {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align:center;
+                            -ms-flex-align:center;
+                                align-items:center;
+                       h5 {
+                           margin-right:20px;
+                       }
+                       .detail_contents_travel_own_start_desc {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align:center;
+                            -ms-flex-align:center;
+                                align-items:center;
+                        p {
+                    
+                            font-size:14px;
+                            font-size:0.875rem;
+                            span {
+                                color:#999;
+                            }
+                        }
+                       }
+                      
+                       
+                        
+                    }
+                    .detail_contents_travel_own_money {
+                        -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                        -webkit-box-pack:end;
+                            -ms-flex-pack:end;
+                                justify-content:flex-end;
+                        // margin-left: 40px;
+                        text-align: right;
+                    
+                    }
+                }
+                .detail_contents_travel_info {
+                    display:-webkit-box;
+                    display:-ms-flexbox;
+                    display:flex;
+                    -webkit-box-align: end;
+                        -ms-flex-align: end;
+                            align-items: flex-end;
+                            -webkit-box-pack:end;
+                                -ms-flex-pack:end;
+                                    justify-content:flex-end;
+                    border-top:2px solid #e9e9e9;
+                    padding-top :20px;
+                    margin-top:20px;
+                    padding-top :1.25rem;
+                    margin-top:1.25rem;
+                    .detail_contents_travel_info_left {
+                        -ms-flex-preferred-size: 50%;
+                            flex-basis: 50%;
+                        h5 {
+                            margin-bottom:20px;
+                            margin-bottom:1.25rem;
+                            -ms-flex-preferred-size: 100%;
+                                flex-basis: 100%;
+                        }
+                        p {
+                            font-size:14px;
+                            font-size:0.875rem;
+                            margin-bottom:20px;
+                            margin-bottom:1.25rem;
+                            display:-webkit-box;
+                            display:-ms-flexbox;
+                            display:flex;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            span {
+                                margin-right:10px;
+                                margin-right:0.625rem;
+                            }
+                        }
+                        ul {
+                            display:-webkit-box;
+                            display:-ms-flexbox;
+                            display:flex;
+                            li {
+                                display:inline-block;
+                                &+li {
+                                    margin-left:20px;
+                                    margin-left:1.25rem;
+                                }
+                                span {
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    font-size:14px;
+                                    font-size:0.875rem;
+                                    color:#999;
+                                }
+                            }
+                        }
+                    }
+                    .detail_contents_travel_info_right {
+                        -webkit-box-flex: 1;
+                            -ms-flex-positive: 1;
+                                flex-grow: 1;
+                        text-align: right;
+                        ul {
+                            li {
+                                display:inline-block;
+                            }
+                        }
+                    }
+                    &.photo_info {
+                        -webkit-box-align: baseline;
+                            -ms-flex-align: baseline;
+                                align-items: baseline;
+                        .detail_contents_travel_info_right {
+                            text-align: left;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+                            h5 {
+                                margin-bottom: 20px;
+                                margin-bottom: 1.25rem;
+                                -ms-flex-preferred-size: 100%;
+                                flex-basis: 100%;
+                            }
+                            p {
+                                font-size: 14px;
+                                font-size: 0.875rem;
+                                margin-bottom: 20px;
+                                margin-bottom: 1.25rem;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-box-flex: 1;
+                                    -ms-flex-positive: 1;
+                                        flex-grow: 1;
+                                span {
+                                    margin-right: 10px;
+                                    margin-right: 0.625rem;
+                                }
+                                &:nth-child(-n+3) {
+                                    -ms-flex-preferred-size: 50%;
+                                        flex-basis: 50%;
+                                    -webkit-box-flex: 1;
+                                        -ms-flex-positive: 1;
+                                            flex-grow: 1;
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+
+
+.detail_related {
+    .detail_related_inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        .detail_related_list {
+            border-top:2px solid #e9e9e9;
+            padding-top :20px;
+            width: 100%;
+            .detail_related_list_title {
+                margin-bottom:20px;
+                padding-left:24px;
+            }
+        }
+    }
+    .related_container {
+        padding-left: 24px;
+        padding-bottom: 24px;
+        .swiper-slide {
+            width:auto;
+            margin-right:20px;
+        }
+    }
+}
+
+
+.detail_review_write {
+    position: relative;
+    // z-index: 101;
+    max-width: 940px;
+    width: 100%;
+    //height:86px;
+    margin: 30px auto;
+    // overflow: visible;
+    background: #fff;
+    border:none;
+    .detail_review_write_inner {
+        padding:20px;
+        padding:1.25rem;
+        background: #fff;
+        border-radius:10px;
+    }
+    .detail_review_write_top {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    }
+    .detail_review_write_bottom {
+        // opacity: 0;
+        // height: 0;
+        // margin: 0;
+        // // overflow: hidden;
+        // &.open {
+        //     opacity: 1;
+        //     height: auto;
+        //     margin-top: 20px;
+        // }
+    }
+}
+
+/* detail_review_list_wrap */
+.detail_review_list_wrap {
+    position: relative;
+}
+
+/* 스팟 리뷰 상세보기 🔥 */
+.detail_review_detail_wrap {
+    position: absolute;
+    width:100%;
+    top: 0;
+    
+}
+.detail_review_detail {
+    max-width: 940px;
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+    background:#fff;
+    border: none;
+    margin-bottom:100px;
+}
+/* 스팟 리뷰 수정하기 🔥 */
+.detail_review_edit_wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+/* detail_recommend */
+.detail_recommend {
+    .detail_contents_inner {
+        .detail_contents_info {
+            margin-left:0;
+            .detail_contents_title {
+                .detail_contents_title_action_location {
+                    display:-webkit-box;
+                    display:-ms-flexbox;
+                    display:flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                            font-size:14px;
+                            font-size:0.875rem;
+                            margin-right:20px;
+                            margin-right:1.25rem;
+                }
+            }
+            
+            .detail_contents_travel_title {
+                h5 {
+                    a {
+                        color:#aaa;
+                        font-weight:500;
+                    }
+                }
+            }
+            .detail_contents_travel {
+                border-top: 2px solid #e9e9e9;
+                margin-top: 20px;
+                padding-top: 20px;
+                margin-top: 1.25rem;
+                padding-top: 1.25rem;
+                .detail_contents_travel_info {
+                    margin-top:20px;
+                    margin-top:1.25rem;
+                    -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    padding-top:0;
+                    border-top:0;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                                -ms-flex-pack: start;
+                                    justify-content: flex-start;
+                    .detail_contents_travel_info_top {
+                        -ms-flex-preferred-size: 100%;
+                            flex-basis: 100%;
+                            font-size:14px;
+                            font-size:0.875rem;
+                        ul {
+                            display:-webkit-box;
+                            display:-ms-flexbox;
+                            display:flex;
+                            -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+                            li {
+                                margin-right:30px;
+                                margin-right:1.875rem;
+                                margin-bottom: 10px;
+                                margin-bottom: 0.625rem;
+                            }
+                        }
+                    }
+                    .detail_contents_travel_info_bottom {
+                        -ms-flex-preferred-size: 100%;
+                            flex-basis: 100%;
+                            margin-top:20px;
+                            margin-top:1.25rem;
+                            font-size:12px;
+                            font-size:0.75rem;
+                        ul {
+                            display:-webkit-box;
+                            display:-ms-flexbox;
+                            display:flex;
+                            li {
+                                margin-right:30px;
+                                margin-right:1.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+#weatherSun{
+    color:#fcf712;
+
+
+}   
+#weatherRain{
+    color:gray;
+}
+#weatherSnow{
+    color:#dcf4ff;
+}
+
+#weatherSun{
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    font-size: 15px;
+}
+
+#temperature_box{
+    margin-right: 15px;
+}

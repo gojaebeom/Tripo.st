@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="travel, trip, journey, abroad, 여행, 휴식, 힐링, 국내여행, 해외여행" />
+    <meta name="description" content="국내여행, 해외여행, 여행가고 싶을 때 여행정보 포스팅" />
+    <meta name="google-site-verification" content="google-site-verification=cEK-NckAtSVXgShjTNpIUclO6LB-K7_2zA8Kl4d4YXA" />
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+     
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <!-- 파노라마 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css"/>
+    <!-- 파노라마 API js -->
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+    
+    <title>Tripo</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187155233-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-187155233-1');
+    </script>
+
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101300341);</script>
+    <script async src="//static.getclicky.com/js"></script>
+
+    <!-- Google Tag Manager 구글에서 준거-->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PCNQL9F');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>    
+    <div class="something"></div>
+    <!--/ [ Single Page App Root 🍰 ] Dom create by javascript .../-->
+    <div 
+        id="root" 
+        loginState="{{ user.is_authenticated }}"
+        {% if user.nickname  %}
+            nickname="{{user.nickname}}"
+        {% else %}
+            nickname="null"
+        {% endif %}
+        {% if user.nickname  %}
+            user_id="{{user.id}}"
+        {% else %}
+            user_id="null"
+        {% endif %}
+        {% if user.email  %}
+            email="{{user.email}}"
+        {% else %}
+            email="null"
+        {% endif %}
+        >
+    </div>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCNQL9F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- 구글 맵 js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCArJV7Z5NU_M54qFp8tLdm4Am6Ogriqsc"></script>
+    <!-- 카카오맵 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=847e05748b8da0044c1e7f5ca35a863f"></script>
+    <script src="/static/js/polyfill.js"></script>
+
+
+    <!-- build.js 시작 -->
+    <script src="/static/js/build.js"></script>
+    
+    <!-- Channel Plugin Scripts -->
+    <script>
+        let agent = navigator.userAgent.toLowerCase();
+        if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+            alert("Tripo.st 를 방문해주셔서 감사합니다. 아쉽지만 저희는 현재 Chrome, Safari, Firefox, Edge 의 브라우저를 지원하고 있습니다.");
+            }
+        (function() {
+        var w = window;
+        if (w.ChannelIO) {
+            return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+        }
+        var ch = function() {
+            ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function(args) {
+            ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+            if (w.ChannelIOInitialized) {
+            return;
+            }
+            w.ChannelIOInitialized = true;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+            s.charset = 'UTF-8';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+        if (document.readyState === 'complete') {
+            l();
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', l);
+        } else {
+            window.addEventListener('DOMContentLoaded', l, false);
+            window.addEventListener('load', l, false);
+        }
+        })();
+        ChannelIO('boot', {
+        "pluginKey": "95479f21-671a-4f63-8fff-1415a75b5621"
+        });
+    </script>        
+</body>
+</html>
